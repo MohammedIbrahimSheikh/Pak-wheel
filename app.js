@@ -317,7 +317,7 @@ function search(){
         }
     }
     if(!flag){
-        body.innerHTML = "<h1>Couldn't Find Your Search Result...!!!</h1>"
+        body.innerHTML = "<div class='h1'>Couldn't Find Your Search Result...!!!</div>"
     }
 }
 // Trigger the displayAllCars() function when the page loads

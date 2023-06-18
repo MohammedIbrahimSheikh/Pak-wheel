@@ -231,7 +231,7 @@ let cars = {
             hundayiCreta: {
                 name: "Hyundai Creta",
                 price: "$6,651",
-                location: "",
+                location: "Islamabad",
                 img: "Images/Hyundai/SUV/Hundayi_creta.png",
             },
             hyundaiSantaFe: {
@@ -275,9 +275,9 @@ function createCard(company,category,n){
             <img class="card-img-top" src="${cars[company][category][n].img}" alt="car-image">
         </div>
         <div class = "container">
-            <h6 class = " card-title mx-auto my-1">${cars[company][category][n].name}</h6>
-            <span class = "price d-block mx-auto ">${cars[company][category][n].price}</span>
-            <span class = "d-block mx-auo ">${cars[company][category][n].location}</span>
+            <h6 class = " card-title mx-auto my-1">${cars[company][category][n].name.toUpperCase()}</h6>
+            <span class = "price d-block mx-auto ">${cars[company][category][n].price.toUpperCase()}</span>
+            <span class = "d-block mx-auo ">${cars[company][category][n].location.toUpperCase()}</span>
         </div>
     </div>`;
 }
